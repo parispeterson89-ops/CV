@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            background-color: #72e996;
+            color: #2f0e40;
+        }
+
+        header {
+            background-color: #4ed7f6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(46, 107, 238, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        header:hover {
+            transform: scale(1.05);
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+        }
+
+        section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: rgb(167, 4, 113);
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(94, 75, 85, 0.1);
+            animation: fadeIn 1s ease;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease; 
+        }
+
+        section.visible {
+            opacity: 1; 
+        }
+
+        h1, h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #05f905;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            opacity: 0;
+            animation: fadeInLi 1s forwards;
+        }
+
+        li:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        li:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        .button {
+            background-color:  rgb(73, 5, 243);
+            color:#07fbd7;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #bdfa05;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLi {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }

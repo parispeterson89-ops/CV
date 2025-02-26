@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+       <title>Peterson PARIS - RESUME</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            background-color: #72e996;
+            color: #2f0e40;
+        }
+
+        header {
+            background-color: #4ed7f6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(46, 107, 238, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        header:hover {
+            transform: scale(1.05);
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+        }
+
+        section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: rgb(167, 4, 113);
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(94, 75, 85, 0.1);
+            animation: fadeIn 1s ease;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease; 
+        }
+
+        section.visible {
+            opacity: 1; 
+        }
+
+        h1, h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #05f905;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            opacity: 0;
+            animation: fadeInLi 1s forwards;
+        }
+
+        li:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        li:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        .button {
+            background-color:  rgb(73, 5, 243);
+            color:#07fbd7;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #bdfa05;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLi {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="peterson.jpg" alt="Peterson">
+        <h1>Peterson PARIS</h1>
+        <p>Full Stack Developer (Python & JavaScript) | CNC Machining Operator (USINAGEM)</p>
+    </header>
+
+    <section id="professional-summary" class="mouseover">
+        <h2>Professional Summary</h2>
+        <p>Sou Peterson Paris, nativo do Haíti, tenho 36 anos, sou pai de um menino de 8 meses, sou um profissional na parte de Usinagem e, ao mesmo tempo, sou estudante dedicado com foco no desenvolvimento Full Stack, especialmente nas linguagens Python e JavaScript. Tenho grande interesse em aprender e aplicar as melhores práticas de desenvolvimento tanto no Back-End quanto no Front-End. Busco constantemente melhorar minhas habilidades por meio de projetos práticos e cursos especializados, com o objetivo de contribuir para o desenvolvimento de soluções tecnológicas robustas e escaláveis.</p>
+        <p><strong>Willing to relocate:</strong>Anywhere</p>
+    </section>
+
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Auxiliar Emendador - Tecelagem</strong> - Dohler S/A (Jan 2024 - Nov 2024): Ajudante nas trocas dos rolos, calibração de máquinas e organização do setor.</li>
+            <li><strong>Operador de Usinagem CNC</strong> - Tupy S.A (2019 - 2023): Operação de máquinas Heller, Mazak, Brother para a produção de peças e acompanhamento da produção até a entrega ao cliente.</li>
+            <li><strong>Auxiliar de Extrusora</strong> - Corfio (2017 - 2018): Operação de extrusoras e soldagem de fios, manutenção de máquinas e calibração.</li>
+            <li><strong>Auxiliar de Classificação WetBlue</strong> - Curtume Viposa S/A (2016 - 2017): Classificação e organização de tipos de couro.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ol>
+            <li><strong>Ensino Superior (Em andamento)</strong> - Desenvolvimento Full Stack (Python e JavaScript) - EBAC / Mate Academy, São Paulo (Jun 2024 - Presente)</li>
+            <li><strong>Ensino Médio Técnico</strong> - Informática e Logística - CEBRAC, Joinville (2021 - 2022)</li>
+            <li><strong>Ensino Médio Técnico</strong> - Técnica em Mecatrônica - SENAI, Joinville (2019 - 2020, curso incompleto)</li>
+            <li><strong>Graduação (Incompleto)</strong> - Engenharia Mecânica - UNIARP, Caçador (2019)</li>
+            <li><strong>Ensino Médio Técnico</strong> - Língua Portuguesa e Cultura Brasileira - IFSC, Caçador (2017 - 2018)</li>
+        </ol>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Kaizen</li>
+            <li>Inventário</li>
+            <li>Resolução de problemas</li>
+            <li>Controle de qualidade</li>
+            <li>Design industrial</li>
+            <li>Six Sigma</li>
+            <li>Web Design</li>
+            <li>Kanban</li>
+            <li>Linha de produção</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications and Licenses</h2>
+        <ul>
+            <li>Javascript Basics Extended</li>
+            <li>Object Oriented Programming</li>
+            <li>Língua Portuguesa</li>
+            <li>Informática Básica</li>
+            <li>Machine Learning (IA)</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </section>
+
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Joinville, Santa Catarina 89228-400</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:parispeterson89@gmail.com">parispeterson89@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/peterson-paris-750ba493/" target="_blank">LinkedIn Profile</a></p>
+            <p><i class="fas fa-phone"></i> +55 47 99203 8554</p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/parispeterson89-ops" target="_blank">GitHub Profile</a></p>       
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="parispeterson89" data-color="#40DCA5" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+        </div>
+    </section>
+
+    <a href="PETERSON-PARIS.pdf" class="button" download>Hired Me!</a>
+
+    <script>
+        document.querySelectorAll('section').forEach(function(section) {
+            section.addEventListener('mouseover', function() {
+                // Make the section visible on hover
+                this.classList.add('visible');
+            });
+            section.addEventListener('mouseout', function() {
+                // Hide the section when the mouse leaves
+                this.classList.remove('visible');
+            });
+        });
+    </script>
+</body>
+</html>
