@@ -1,3 +1,8 @@
+
+[![OneDrive](https://img.shields.io/badge/OneDrive-0078D4.svg?style=for-the-badge&logo=microsoftonedrive&logoColor=white)](https://v0-pagina-responsiva.vercel.app/)
+
+
+
 # CV
 ## briefing
 
